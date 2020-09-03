@@ -1,7 +1,7 @@
-gwt-maven-archetypes
-====================
+gwt-maven-springboot-archetype
+==============================
 
-This project contains Maven archetypes for modular GWT projects.
+This project contains a Maven archetypes for modular GWT projects using Spring Boot. It is based on Thomas Broyer's [gwt-maven-archetypes](https://github.com/tbroyer/gwt-maven-archetypes).
 
 How to use
 ----------
@@ -9,23 +9,20 @@ How to use
 ### Generate a project
 
     mvn archetype:generate \
-       -DarchetypeGroupId=net.ltgt.gwt.archetypes \
+       -DarchetypeGroupId=com.github.nalukit.archetype \
        -DarchetypeVersion=LATEST \
        -DarchetypeArtifactId=<artifactId>
 
 where the available `<artifactIds>` are:
 
-* `modular-webapp`
 * `modular-springboot-webapp`
-* `modular-requestfactory`
-* `dagger-guice-rf-activities`
 
-This should use the latest release from the Central Repository.
+This should use the latest release from the Central Repository. (TODO!!!)
 Alternatively, and/or if you want to hack on / contribute to the archetypes,
 you can clone and install the project locally:
 
-    git clone https://github.com/tbroyer/gwt-maven-archetypes.git
-    cd gwt-maven-archetypes && mvn clean install
+    git clone https://github.com/NaluKit/gwt-maven-springboot-archetype
+    cd gwt-maven-springboot-archetype && mvn clean install
 
 You'll then use the `mvn archetype:generate` command from above, except for the
 `-DarchetypeVersion` argument which you'll replace with `HEAD-SNAPSHOT`.
@@ -36,13 +33,16 @@ You'll then use the `mvn archetype:generate` command from above, except for the
 Change directory to your generated project and issue the following commands:
 
 1. In one terminal window: `mvn gwt:codeserver -pl *-client -am`
-2. In another terminal window: `mvn jetty:run -pl *-server -am -Denv=dev`
-3. 
-Or if you'd rather use Tomcat than Jetty, use `mvn tomcat7:run` instead of `mvn jetty:run`. And if you'd rather use SpringBoot, use `mvn spring-boot:run -pl *-server -am -Denv=dev` instead of `mvn jetty:run`.
+2. In another terminal window: `mvn spring-boot:run -pl *-server -am`
+
 
 Note that the `-pl` and `-am` are not strictly necessary, they just tell Maven not to
 build the client module when you're dealing with the server one, and vice versa.
 
+
+
+
+// TODO ....
 
 ### Profiles
 

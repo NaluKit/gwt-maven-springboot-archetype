@@ -63,7 +63,9 @@
         </configuration>
       </plugin>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
+        <version>3.2.0</version>
         <executions>
           <execution>
             <id>copy-resources</id>
@@ -72,14 +74,12 @@
               <goal>copy-resources</goal>
             </goals>
             <configuration>
-              <outputDirectory>${dollar}{basedir}/target/${build.finalName}/</outputDirectory>
+              <outputDirectory>${dollar}{basedir}/target/${project.build.finalName}/</outputDirectory>
               <resources>
                 <resource>
                   <directory>${basedir}/src/main/resources/public/</directory>
                   <includes>
-                    <include>favicon.ico</include>
-                    <include>index.html</include>
-                    <include>${rootArtifactId}.css</include>
+                    <include>**/*.*</include>
                   </includes>
                 </resource>
               </resources>

@@ -24,7 +24,7 @@
   </parent>
 
   <artifactId>modular-springboot-webapp</artifactId>
-  <version>HEAD-SNAPSHOT</version>
+  <version>2020.9.6</version>
   <packaging>maven-archetype</packaging>
 
   <name>GWT Modular GWT-RPC SpringBoot WebApp Archetype</name>

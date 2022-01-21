@@ -18,7 +18,7 @@
 
   <groupId>com.github.nalukit.archetype</groupId>
   <artifactId>gwt-maven-springboot-archetype</artifactId>
-  <version>HEAD-SNAPSHOT</version>
+  <version>2022.1.21</version>
   <packaging>pom</packaging>
 
   <url>https://github.com/nalukit/gwt-maven-springboot-archetype</url>
@@ -54,6 +54,7 @@
 
   <modules>
     <module>modular-springboot-webapp</module>
+    <module>testApp</module>
   </modules>
 
   <scm>

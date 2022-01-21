@@ -8,7 +8,8 @@
   <packaging>pom</packaging>
 
   <properties>
-    <spring-boot.version>2.3.3.RELEASE</spring-boot.version>
+    <gwt.version>2.9.0</gwt.version>
+    <spring-boot.version>2.6.3</spring-boot.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -18,7 +19,7 @@
       <dependency>
         <groupId>com.google.gwt</groupId>
         <artifactId>gwt</artifactId>
-        <version>2.9.0</version>
+        <version>${gwt.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -86,6 +87,10 @@
           <configuration>
             <skip>true</skip>
           </configuration>
+        </plugin>
+        <plugin>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.3.1</version>
         </plugin>
       </plugins>
     </pluginManagement>

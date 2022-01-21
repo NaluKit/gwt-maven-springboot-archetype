@@ -69,6 +69,7 @@
           <includes>
             <include>**/*.ico</include>
             <include>**/*.properties</include>
+            <include>**/*.yaml</include>
           </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">

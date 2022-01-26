@@ -42,6 +42,11 @@
         <configuration>
           <moduleName>it.pkg.Basic</moduleName>
           <moduleShortName>basic</moduleShortName>
+          <workDir>${basedir}/target/gwt/workDir</workDir>
+          <compilerArgs>
+            <arg>-gen</arg>
+            <arg>${basedir}/target/gwt/gen</arg>
+          </compilerArgs>
         </configuration>
       </plugin>
     </plugins>

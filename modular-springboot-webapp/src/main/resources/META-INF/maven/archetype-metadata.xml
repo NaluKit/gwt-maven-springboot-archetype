@@ -26,6 +26,14 @@
       <defaultValue>${module.toLowerCase()}</defaultValue>
     </requiredProperty>
   </requiredProperties>
+  <fileSets>
+    <fileSet filtered="true" packaged="false" encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>**/readme.txt</include>
+      </includes>
+    </fileSet>
+  </fileSets>
   <modules>
     <module id="${rootArtifactId}-client" dir="__rootArtifactId__-client" name="${rootArtifactId}-client">
       <fileSets>

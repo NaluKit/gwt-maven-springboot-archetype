@@ -43,6 +43,11 @@
         <configuration>
           <moduleName>${package}.${module}</moduleName>
           <moduleShortName>${module-short-name}</moduleShortName>
+          <workDir>${basedir}/target/gwt/workDir</workDir>
+          <compilerArgs>
+            <arg>-gen</arg>
+            <arg>${basedir}/target/gwt/gen</arg>
+          </compilerArgs>
         </configuration>
       </plugin>
     </plugins>

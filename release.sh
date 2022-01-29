@@ -25,7 +25,8 @@ for module in "$@"; do
     echo "ERROR: $module is not a module of the project"
     exit 1
   fi
-  MODULES+=("$relmodule")
+#  MODULES+=("$relmodule")
+  MODULES+=("$module")
 done
 unset relmodule
 
@@ -41,6 +42,7 @@ git checkout $(git rev-parse --verify HEAD)
 echo "echo 2"
 
 for module in "${MODULES[@]}"; do
+  echo "module 2: " ${module}
   mvn versions:set -DgenerateBackupPoms=false -DnewVersion="$VERSION" -pl "$module"
   git add "$module/pom.xml"
 done

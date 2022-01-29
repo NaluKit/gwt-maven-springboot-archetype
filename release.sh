@@ -1,4 +1,6 @@
 #!/bin/bash
+scriptDir="$(cd "$(dirname "$0")" && pwd -P)"
+echo "SricptDir: " ${scriptDir}
 
 set -eu
 
@@ -13,9 +15,13 @@ fi
 
 declare MODULES=()
 for module in "$@"; do
-  relmodule=$(realpath --relative-base=. "$module")
-  relmodule=${relmodule%/pom.xml}
-  if [[ $relmodule = */* ]] || [ ! -d "$relmodule" ] || [ ! -f "$relmodule/pom.xml" ]; then
+  echo "module: " ${module}
+  relmodule=${scriptDir}
+  echo "relmodule 1: " ${relmodule}
+  relmodule=${scriptDir}/${module}
+  echo "relmodule 2: " ${relmodule}
+  if [ ! -d "$relmodule" ] || [ ! -f "$relmodule/pom.xml" ]; then
+#  if [[ $relmodule = */* ]] || [ ! -d "$relmodule" ] || [ ! -f "$relmodule/pom.xml" ]; then
     echo "ERROR: $module is not a module of the project"
     exit 1
   fi

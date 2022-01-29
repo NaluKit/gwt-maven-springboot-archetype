@@ -34,18 +34,29 @@ if [[ -n $(git status --porcelain) ]]; then
   exit 1
 fi
 
+echo "echo 1"
+
 git checkout $(git rev-parse --verify HEAD)
+
+echo "echo 2"
 
 for module in "${MODULES[@]}"; do
   mvn versions:set -DgenerateBackupPoms=false -DnewVersion="$VERSION" -pl "$module"
   git add "$module/pom.xml"
 done
+
+echo "echo 3"
+
 git commit -m "Prepare release of ${MODULES[*]} $VERSION"
+
+echo "echo 4"
 
 if [[ -n $(git status --porcelain) ]]; then
   echo "ERROR: Working tree is dirty after version updates"
   exit 1
 fi
+
+echo "echo 5"
 
 declare TAGS=()
 for module in "${MODULES[@]}"; do
@@ -53,6 +64,9 @@ for module in "${MODULES[@]}"; do
   git tag -a -m "Releasing $module $VERSION" "$module-$VERSION"
   TAGS+=("tag" "$module-$VERSION")
 done
+
+echo "echo 6"
+
 mvn clean deploy -Prelease -pl $(IFS=, ; echo "${MODULES[*]}")
 git push origin "${TAGS[@]}"
 

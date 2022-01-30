@@ -1,4 +1,6 @@
 #!/bin/bash
+scriptDir="$(cd "$(dirname "$0")" && pwd -P)"
+echo "SricptDir: " ${scriptDir}
 
 set -eu
 
@@ -13,13 +15,13 @@ fi
 
 declare MODULES=()
 for module in "$@"; do
-  relmodule=$(realpath --relative-base=. "$module")
-  relmodule=${relmodule%/pom.xml}
-  if [[ $relmodule = */* ]] || [ ! -d "$relmodule" ] || [ ! -f "$relmodule/pom.xml" ]; then
+  relmodule=${scriptDir}
+  relmodule=${scriptDir}/${module}
+  if [ ! -d "$relmodule" ] || [ ! -f "$relmodule/pom.xml" ]; then
     echo "ERROR: $module is not a module of the project"
     exit 1
   fi
-  MODULES+=("$relmodule")
+  MODULES+=("$module")
 done
 unset relmodule
 
@@ -31,9 +33,11 @@ fi
 git checkout $(git rev-parse --verify HEAD)
 
 for module in "${MODULES[@]}"; do
+  echo "module 2: " ${module}
   mvn versions:set -DgenerateBackupPoms=false -DnewVersion="$VERSION" -pl "$module"
   git add "$module/pom.xml"
 done
+
 git commit -m "Prepare release of ${MODULES[*]} $VERSION"
 
 if [[ -n $(git status --porcelain) ]]; then
@@ -47,6 +51,7 @@ for module in "${MODULES[@]}"; do
   git tag -a -m "Releasing $module $VERSION" "$module-$VERSION"
   TAGS+=("tag" "$module-$VERSION")
 done
+
 mvn clean deploy -Prelease -pl $(IFS=, ; echo "${MODULES[*]}")
 git push origin "${TAGS[@]}"
 

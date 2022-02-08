@@ -53,6 +53,7 @@
   </contributors>
 
   <modules>
+    <module>modular-j2cl-webapp</module>
     <module>modular-springboot-webapp</module>
   </modules>
 

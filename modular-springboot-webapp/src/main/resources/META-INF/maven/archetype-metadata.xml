@@ -77,12 +77,12 @@
           <includes>
             <include>**/*.ico</include>
             <include>**/*.properties</include>
-            <include>**/*.yaml</include>
           </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
           <directory>src/main/resources</directory>
           <includes>
+            <include>**/*.yaml</include>
             <include>**/*.css</include>
             <include>**/*.html</include>
           </includes>

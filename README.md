@@ -19,6 +19,9 @@ where the available `<artifactIds>` is:
 
 * `modular-springboot-webapp`
 
+* `modular-j2cl-webapp`
+
+
 This should use the latest release from the Central Repository.
 Alternatively, and/or if you want to hack on / contribute to the archetypes,
 you can clone and install the project locally:
@@ -32,15 +35,7 @@ You'll then use the `mvn archetype:generate` command from above, except for the
 
 ### Start the development mode
 
-Change directory to your generated project and issue the following commands:
-
-1. In one terminal window: `mvn gwt:codeserver -pl *-client -am`
-2. In another terminal window: `mvn spring-boot:run -pl *-server -am`
-
-Note that the `-pl` and `-am` are not strictly necessary, they just tell Maven not to
-build the client module when you're dealing with the server one, and vice versa.
-
-In case you will debug the server code and create a running configuration in your preferred IDE, make sure, to start the Spring Boot Service before the code server.
+Inside the generated project, you will fine a `readme.txt` which decribes the steps to start the project.
 
 Compatibility
 -------------

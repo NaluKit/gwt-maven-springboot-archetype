@@ -24,12 +24,6 @@
       <artifactId>${rootArtifactId}-shared</artifactId>
       <version>${dollar}{project.version}</version>
     </dependency>
-    <dependency>
-      <groupId>${dollar}{project.groupId}</groupId>
-      <artifactId>${rootArtifactId}-shared</artifactId>
-      <version>${dollar}{project.version}</version>
-      <classifier>sources</classifier>
-    </dependency>
 
     <dependency>
       <groupId>com.google.elemental2</groupId>
@@ -41,23 +35,6 @@
       <artifactId>elemental2-dom</artifactId>
       <version>1.1.0</version>
     </dependency>
-    <dependency>
-      <groupId>org.dominokit</groupId>
-      <artifactId>gwt-validation-api</artifactId>
-      <version>1.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.dominokit</groupId>
-      <artifactId>domino-ui</artifactId>
-      <version>1.0.0-RC6</version>
-      <exclusions>
-        <exclusion>
-          <groupId>javax.validation</groupId>
-          <artifactId>validation-api</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-
   </dependencies>
 
   <build>

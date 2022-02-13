@@ -10,14 +10,6 @@
 
   <artifactId>basic-j2cl-webapp-shared</artifactId>
 
-  <dependencies>
-    <dependency>
-      <groupId>com.google.gwt</groupId>
-      <artifactId>gwt-servlet</artifactId>
-      <scope>provided</scope>
-    </dependency>
-  </dependencies>
-
   <build>
     <plugins>
       <plugin>

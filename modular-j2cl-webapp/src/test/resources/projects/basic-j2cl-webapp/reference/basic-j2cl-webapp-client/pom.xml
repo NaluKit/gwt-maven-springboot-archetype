@@ -19,15 +19,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.dominokit.samples</groupId>
-      <artifactId>basic-j2cl-shared</artifactId>
-      <version>0.1-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.dominokit.samples</groupId>
-      <artifactId>basic-j2cl-shared</artifactId>
-      <version>0.1-SNAPSHOT</version>
-      <classifier>sources</classifier>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>basic-j2cl-webapp-shared</artifactId>
+      <version>${project.version}</version>
     </dependency>
 
     <dependency>
@@ -40,23 +34,6 @@
       <artifactId>elemental2-dom</artifactId>
       <version>1.1.0</version>
     </dependency>
-    <dependency>
-      <groupId>org.dominokit</groupId>
-      <artifactId>gwt-validation-api</artifactId>
-      <version>1.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.dominokit</groupId>
-      <artifactId>domino-ui</artifactId>
-      <version>1.0.0-RC6</version>
-      <exclusions>
-        <exclusion>
-          <groupId>javax.validation</groupId>
-          <artifactId>validation-api</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-
   </dependencies>
 
   <build>

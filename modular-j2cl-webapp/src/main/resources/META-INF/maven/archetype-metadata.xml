@@ -22,12 +22,9 @@
     <requiredProperty key="module">
       <defaultValue>App</defaultValue>
     </requiredProperty>
-    <requiredProperty key="module-short-name">
-      <defaultValue>${module.toLowerCase()}</defaultValue>
-    </requiredProperty>
   </requiredProperties>
   <fileSets>
-    <fileSet filtered="true" packaged="false" encoding="UTF-8">
+    <fileSet filtered="true" encoding="UTF-8">
       <directory></directory>
       <includes>
         <include>**/readme.txt</include>

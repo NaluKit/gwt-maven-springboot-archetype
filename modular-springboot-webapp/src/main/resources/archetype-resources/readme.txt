@@ -9,11 +9,11 @@ To run the examples:
 
 * run in one terminal window:
 
-  - mvn clean package
+  - mvn clean compile
 
   - mvn gwt:codeserver -pl *-client -am
 
-Wait until codeserver is startet (it is started, in case you see the codeserver url). after a `mvn clean package` is this necessary because the `launcherdir` has to be created inside the Spring Boot server.
+Wait until codeserver is startet (it is started, in case you see the codeserver url). after a `mvn clean` is this necessary because the `launcherdir` has to be created inside the Spring Boot server.
 
 * in another terminal window:
 

@@ -9,7 +9,7 @@
 
   <properties>
     <gwt.version>2.9.0</gwt.version>
-    <spring-boot.version>2.6.3</spring-boot.version>
+    <spring-boot.version>2.6.7</spring-boot.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>

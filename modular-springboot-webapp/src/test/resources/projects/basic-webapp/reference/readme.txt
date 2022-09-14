@@ -1,4 +1,5 @@
-Basic Application
+#set( $dollar = '$')
+${module} Application
 
 This project was generated using the `gwt-maven-springboot-archetype`!
 
@@ -12,7 +13,7 @@ To run the examples:
 
   - mvn gwt:codeserver -pl *-client -am
 
-Wait until codeserver is startet (it is started, in case you see the codeserver url). after a `mvn clean` is this necessary because the `launcherdir` has to be created inside the Spring Boot server.
+Wait until codeserver is startet (it is started, in case you see the codeserver url). after a `mvn clean` is this necessary because the `launcherdir` has to be created inside the Spring Boot server before launching the Sprin Boot server.
 
 * in another terminal window:
 

@@ -40,7 +40,7 @@ Change directory to your generated project and issue the following commands:
 Note that the `-pl` and `-am` are not strictly necessary, they just tell Maven not to
 build the client module when you're dealing with the server one, and vice versa.
 
-In case you will debug the server code and create a running configuration in your preferred IDE, make sure, to start the Spring Boot Service before the code server.
+In case you will debug the server code and create a running configuration in your preferred IDE, make sure, to start the code server (wait until the url wuth9876 at the end appears) before the Spring Boot Service.
 
 Compatibility
 -------------

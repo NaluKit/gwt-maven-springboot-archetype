@@ -53,6 +53,7 @@
   </contributors>
 
   <modules>
+    <module>clean-modular-springboot-webapp</module>
     <module>modular-springboot-webapp</module>
   </modules>
 

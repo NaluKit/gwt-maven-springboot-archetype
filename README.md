@@ -17,9 +17,21 @@ How to use
 
 where the available `<artifactIds>` is:
 
+* `clean-modular-springboot-webapp`
 * `modular-springboot-webapp`
 
 This should use the latest release from the Central Repository.
+
+#### clean-modular-springboot-webapp
+
+Generates a clean Spring Boot multi Maven module project without any example code. If you need a clean approach, this is the best way to start.
+
+#### modular-springboot-webapp
+
+Generates a Spring Boot multi Maven module project with any example code. The example is similar to the one from the GWT project.
+
+### Local generation 
+
 Alternatively, and/or if you want to hack on / contribute to the archetypes,
 you can clone and install the project locally:
 

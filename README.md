@@ -35,7 +35,7 @@ Alternatively, and/or if you want to hack on / contribute to the archetypes,
 you can clone and install the project locally:
 
     git clone https://github.com/NaluKit/gwt-maven-springboot-archetype
-    cd gwt-maven-springboot-archetype && mvn clean install
+    cd gwt-maven-springboot-archetype && mvn clean compile
 
 You'll then use the `mvn archetype:generate` command from above, except for the
 `-DarchetypeVersion` argument which you'll replace with `HEAD-SNAPSHOT`.
@@ -46,7 +46,9 @@ You'll then use the `mvn archetype:generate` command from above, except for the
 Change directory to your generated project and issue the following commands:
 
 1. In one terminal window: `mvn gwt:codeserver -pl *-client -am`
-2. In another terminal window: `mvn spring-boot:run -pl *-server -am`
+2. In another terminal window: `mvn spring-boot:run -pl *-server -am` 
+
+After a `mvn clean compile` you have to wait until you see this line 'The code server is ready at http://127.0.0.1:9876/' before starting the Spring Boot server.
 
 Note that the `-pl` and `-am` are not strictly necessary, they just tell Maven not to
 build the client module when you're dealing with the server one, and vice versa.

@@ -17,11 +17,6 @@
       <artifactId>basic-webapp-shared</artifactId>
       <version>${project.version}</version>
     </dependency>
-    <!-- only needed if you are using GWT-RPC -->
-    <dependency>
-      <groupId>org.gwtproject</groupId>
-      <artifactId>gwt-servlet</artifactId>
-    </dependency>
 
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -35,6 +30,14 @@
           <groupId>org.springframework.boot</groupId>
           <artifactId>org.apache.logging.log4j</artifactId>
         </exclusion>
+        <exclusion>
+          <groupId>commons-io</groupId>
+          <artifactId>commons-io</artifactId>
+        </exclusion>
+        <exclusion>
+          <artifactId>snakeyaml</artifactId>
+          <groupId>org.yaml</groupId>
+        </exclusion>
       </exclusions>
     </dependency>
     <dependency>
@@ -46,6 +49,12 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-tomcat</artifactId>
       <scope>provided</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+    <dependency>
+      <groupId>org.yaml</groupId>
+      <artifactId>snakeyaml</artifactId>
     </dependency>
   </dependencies>
 

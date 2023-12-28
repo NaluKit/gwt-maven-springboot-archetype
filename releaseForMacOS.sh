@@ -52,7 +52,7 @@ for module in "${MODULES[@]}"; do
   TAGS+=("tag" "$module-$VERSION")
 done
 
-mvn clean deploy -Prelease -pl $(IFS=, ; echo "${MODULES[*]}") -DskipTests
+mvn clean deploy -Prelease -pl $(IFS=, ; echo "${MODULES[*]}")
 git push origin "${TAGS[@]}"
 
 git checkout -

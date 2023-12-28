@@ -9,7 +9,11 @@
 
   <properties>
     <gwt.version>2.10.0</gwt.version>
-    <spring-boot.version>2.7.6</spring-boot.version>
+    <snakeyaml.version>2.0</snakeyaml.version>
+    <spring-boot.version>3.1.6</spring-boot.version>
+
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -31,17 +35,26 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+      <dependency>
+        <groupId>org.yaml</groupId>
+        <artifactId>snakeyaml</artifactId>
+        <version>${snakeyaml.version}</version>
+      </dependency>
     </dependencies>
+  </dependencies>
   </dependencyManagement>
 
   <build>
     <plugins>
       <plugin>
-        <groupId>net.ltgt.gwt.maven</groupId>
-        <artifactId>gwt-maven-plugin</artifactId>
-        <inherited>false</inherited>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
         <configuration>
-          <launcherDir>${basedir}/${rootArtifactId}-server/target/classes/launcherDir/</launcherDir>
+          <source>${maven.compiler.source}</source>
+          <target>${maven.compiler.target}</target>
         </configuration>
       </plugin>
     </plugins>
@@ -59,7 +72,7 @@
         <plugin>
           <groupId>net.ltgt.gwt.maven</groupId>
           <artifactId>gwt-maven-plugin</artifactId>
-          <version>1.0.1</version>
+          <version>1.1.0</version>
           <extensions>true</extensions>
           <configuration>
             <sourceLevel>1.8</sourceLevel>
@@ -95,9 +108,4 @@
       </plugins>
     </pluginManagement>
   </build>
-  <modules>
-    <module>basic-webapp-client</module>
-    <module>basic-webapp-shared</module>
-    <module>basic-webapp-server</module>
-  </modules>
-</project>
+ </project>

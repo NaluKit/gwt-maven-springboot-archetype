@@ -28,5 +28,5 @@
   <packaging>maven-archetype</packaging>
 
   <name>GWT Modular SpringBoot WebApp Archetype - Clean</name>
-  <description>The GWT WebAppCreator's sample (using GWT-RPC), modularized.</description>
+  <description>The GWT WebAppCreator's sample, modularized.</description>
 </project>

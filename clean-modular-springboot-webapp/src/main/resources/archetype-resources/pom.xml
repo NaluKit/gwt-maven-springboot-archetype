@@ -106,9 +106,4 @@
       </plugins>
     </pluginManagement>
   </build>
-  <modules>
-    <module>basic-webapp-client</module>
-    <module>basic-webapp-shared</module>
-    <module>basic-webapp-server</module>
-  </modules>
 </project>

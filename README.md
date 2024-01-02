@@ -17,6 +17,7 @@ How to use
 
 where the available `<artifactIds>` is:
 
+* `clean-modular-springboot-webapp`
 * `modular-springboot-webapp`
 
 This should use the latest release from the Central Repository.

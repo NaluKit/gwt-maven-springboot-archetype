@@ -27,7 +27,7 @@
                 
     
     
-    <gwt.version>2.10.0</gwt.version>
+    <gwt.version>2.11.0</gwt.version>
                 
     
     
@@ -35,7 +35,7 @@
                 
     
     
-    <spring-boot.version>3.1.6</spring-boot.version>
+    <spring-boot.version>3.2.2</spring-boot.version>
                 
     
     
@@ -215,7 +215,7 @@
                                         
           
           
-          <version>3.11.0</version>
+          <version>3.12.1</version>
                                         
           
           
@@ -291,7 +291,7 @@
                                         
           
           
-          <version>3.2.1</version>
+          <version>3.3.0</version>
                                         
           
           
@@ -375,7 +375,7 @@
                                         
           
           
-          <version>3.3.1</version>
+          <version>3.4.0</version>
                                       
         
         

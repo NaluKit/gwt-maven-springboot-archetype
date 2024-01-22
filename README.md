@@ -64,6 +64,8 @@ build the client module when you're dealing with the server one, and vice versa.
 
 In case you will debug the server code and create a running configuration in your preferred IDE, make sure, to start the code server (wait until the url with 9876 at the end appears) before the Spring Boot Service.
 
+Once both are server are running, enter `http://localhost:8080` in a browser window.
+
 Compatibility
 -------------
 

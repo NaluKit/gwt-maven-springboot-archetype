@@ -29,14 +29,18 @@ Generates a clean Spring Boot multi Maven module project without any example cod
 The generated project will use the following version:
 
 * Java 17
-* GWT 2.10.0
-* Spring Boot 3.1.6
+* GWT 2.11.0
+* Spring Boot 3.2.2
 
 #### modular-springboot-webapp
 
 Generates a Spring Boot multi Maven module project with any example code. The example is similar to the one from the GWT project.
 
-Note: Will be update once GWT 2.11.0 is released!
+The generated project will use the following version:
+
+* Java 17
+* GWT 2.11.0
+* Spring Boot 3.2.2
 
 ### Local generation 
 

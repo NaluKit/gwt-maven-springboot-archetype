@@ -39,7 +39,11 @@
                 
     
     
-    <maven.compiler.source>17</maven.compiler.source>
+    <!-- GWT currently only supports up to Java 11 syntax -->
+                
+    
+    
+    <maven.compiler.source>11</maven.compiler.source>
                 
     
     

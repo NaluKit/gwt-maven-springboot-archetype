@@ -12,6 +12,11 @@
   <artifactId>${artifactId}</artifactId>
   <packaging>war</packaging>
 
+  <properties>
+    <!-- The server can use Java 17 syntax -->
+    <maven.compiler.source>17</maven.compiler.source>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>${dollar}{project.groupId}</groupId>

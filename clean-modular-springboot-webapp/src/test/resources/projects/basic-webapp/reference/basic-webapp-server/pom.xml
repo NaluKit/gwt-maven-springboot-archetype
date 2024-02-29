@@ -11,6 +11,11 @@
   <artifactId>basic-webapp-server</artifactId>
   <packaging>war</packaging>
 
+  <properties>
+    <!-- The server can use Java 17 syntax -->
+    <maven.compiler.source>17</maven.compiler.source>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>${project.groupId}</groupId>

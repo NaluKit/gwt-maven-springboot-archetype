@@ -15,7 +15,7 @@ To run the examples:
 
 Wait until codeserver is startet (it is started, in case you see the codeserver url).
 After a `mvn clean` is this necessary because the `launcherdir` has to be created inside
-the Spring Boot server before launching the Sprin Boot server.
+the Spring Boot server before launching the Spring Boot server.
 
 * in another terminal window:
 

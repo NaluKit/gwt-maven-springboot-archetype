@@ -1,5 +1,4 @@
-#set( $dollar = '$')
-${module} Application
+Basic Application
 
 This project was generated using the `gwt-maven-springboot-archetype`!
 

@@ -21,6 +21,9 @@ public class Application extends SpringBootServletInitializer {
         return builder.sources(Application.class);
     }
 
+    /**
+     * You may deleted this inner class if you do not use RPC, otherwise it is better to keep it for development.
+     */
     @Component
     public static class EmbeddedServletContainerConfig implements WebServerFactoryCustomizer<TomcatServletWebServerFactory> {
         @Override

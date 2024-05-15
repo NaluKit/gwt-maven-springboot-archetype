@@ -30,7 +30,7 @@ The generated project will use the following version:
 
 * Java 17
 * GWT 2.11.0
-* Spring Boot 3.2.2
+* Spring Boot 3.2.5
 
 #### modular-springboot-webapp
 
@@ -40,7 +40,7 @@ The generated project will use the following version:
 
 * Java 17
 * GWT 2.11.0
-* Spring Boot 3.2.2
+* Spring Boot 3.2.5
 
 ### Local generation 
 

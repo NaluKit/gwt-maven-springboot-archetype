@@ -10,7 +10,7 @@
   <properties>
     <gwt.version>2.11.0</gwt.version>
     <snakeyaml.version>2.0</snakeyaml.version>
-    <spring-boot.version>3.2.2</spring-boot.version>
+    <spring-boot.version>3.2.5</spring-boot.version>
 
     <!-- GWT currently only supports up to Java 11 syntax -->
     <maven.compiler.source>11</maven.compiler.source>

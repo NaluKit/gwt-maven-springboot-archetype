@@ -10,6 +10,8 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.stereotype.Component;
 
 import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.Objects;
 
 @SpringBootApplication
@@ -32,15 +34,16 @@ public class Application
       implements WebServerFactoryCustomizer<TomcatServletWebServerFactory> {
     @Override
     public void customize(TomcatServletWebServerFactory factory) {
-      /**
-       * You have to set a document root here, otherwise RemoteServiceServlet will failed to find the
-       * corresponding serializationPolicyFilePath on a temporary web server started by spring boot application:
-       * servlet.getServletContext().getResourceAsStream(serializationPolicyFilePath) returns null.
-       * This has impact that java.io.Serializable can be no more used in RPC, only IsSerializable works.
-       * */
-      factory.setDocumentRoot(new File(Objects.requireNonNull(getClass().getResource("/"))
-                                              .getFile(),
-                                       "launcherDir"));
+      File laucherDirDirectory = new File(Objects.requireNonNull(getClass().getResource("/"))
+                                                 .getFile(),
+                                          "launcherDir");
+      if (Files.exists(Path.of(laucherDirDirectory.toURI()))) {
+        // You have to set a document root here, otherwise RemoteServiceServlet will failed to find the
+        // corresponding serializationPolicyFilePath on a temporary web server started by spring boot application:
+        // servlet.getServletContext().getResourceAsStream(serializationPolicyFilePath) returns null.
+        // This has impact that java.io.Serializable can be no more used in RPC, only IsSerializable works.
+        factory.setDocumentRoot(laucherDirDirectory);
+      }
     }
   }
 

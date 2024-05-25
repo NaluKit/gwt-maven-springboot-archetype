@@ -12,10 +12,6 @@
     <snakeyaml.version>2.0</snakeyaml.version>
     <spring-boot.version>3.2.2</spring-boot.version>
 
-    <!-- GWT currently only supports up to Java 11 syntax -->
-    <maven.compiler.source>11</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
-
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
@@ -70,7 +66,7 @@
           <version>1.1.0</version>
           <extensions>true</extensions>
           <configuration>
-            <sourceLevel>1.8</sourceLevel>
+            <sourceLevel>11</sourceLevel>
             <failOnError>true</failOnError>
           </configuration>
         </plugin>

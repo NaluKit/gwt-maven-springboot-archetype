@@ -31,7 +31,7 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '11'
+          java-version: '17'
           cache: maven
       - name: Compile with Maven
         run: JAVA_HOME=$JAVA_HOME_8_X64 mvn -V -B -ntp -U -e verify

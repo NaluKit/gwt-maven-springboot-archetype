@@ -102,4 +102,4 @@ Then use the `mvn archetype:generate` command from above, except for the `-Darch
 replace with `HEAD-SNAPSHOT`.
 
 ## To get in touch with the developer
-Please visit use us at the [Nalu Gitter room](https://gitter.im/Nalukit42/Lobby).
+Please visit use us at [Nalu Gitter room](https://gitter.im/Nalukit42/Lobby).

@@ -12,7 +12,6 @@
   <packaging>war</packaging>
 
   <properties>
-    <!-- The server can use Java 17 syntax -->
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
   </properties>

@@ -71,7 +71,7 @@
           <version>1.1.0</version>
           <extensions>true</extensions>
           <configuration>
-            <sourceLevel>11</sourceLevel>
+            <sourceLevel>17</sourceLevel>
             <failOnError>true</failOnError>
           </configuration>
         </plugin>

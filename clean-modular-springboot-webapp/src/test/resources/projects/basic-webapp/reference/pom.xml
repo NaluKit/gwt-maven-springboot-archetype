@@ -8,7 +8,7 @@
   <packaging>pom</packaging>
 
   <properties>
-    <gwt.version>2.12.0</gwt.version>
+    <gwt.version>2.12.1</gwt.version>
     <snakeyaml.version>2.0</snakeyaml.version>
     <spring-boot.version>3.3.5</spring-boot.version>
 

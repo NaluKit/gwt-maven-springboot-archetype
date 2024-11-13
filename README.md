@@ -31,7 +31,7 @@ the best way to start.
 The generated project will use the following version:
 
 * Java 17
-* GWT 2.12.0
+* GWT 2.12.1
 * Spring Boot 3.3.5
 
 #### modular-springboot-webapp
@@ -42,8 +42,8 @@ project.
 The generated project will use the following version:
 
 * Java 17
-* GWT 2.11.0
-* Spring Boot 3.2.5
+* GWT 2.12.1
+* Spring Boot 3.3.5
 
 ### Start the development mode
 

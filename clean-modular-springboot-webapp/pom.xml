@@ -24,7 +24,7 @@
   </parent>
 
   <artifactId>clean-modular-springboot-webapp</artifactId>
-  <version>HEAD-SNAPSHOT</version>
+  <version>2025.5.2</version>
   <packaging>maven-archetype</packaging>
 
   <name>GWT Modular SpringBoot WebApp Archetype - Clean</name>

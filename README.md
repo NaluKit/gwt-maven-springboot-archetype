@@ -14,36 +14,26 @@ If you are looking for the original archetype creator or would prefer another ba
 mvn archetype:generate -DarchetypeGroupId=com.github.nalukit.archetype -DarchetypeVersion=LATEST -DarchetypeArtifactId=<artifactId>
 ```
 
-where the available `<artifactIds>` is:
+where the available `<artifactId>` is:
 
 * `clean-modular-springboot-webapp`
+
+    * Generates a clean Spring Boot multi Maven module project without any example code.
+    * This is the best way to start if you understand how things work and want to start your own project.
+
 * `modular-springboot-webapp`
 
-This should use the latest release from the Central Repository.
+    * Generates a Spring Boot multi Maven module project with example code.
+    * The example is similar to the one from the GWT project.
+    * This is the best way to start if you want to see how things work.
 
-> 📝 Maven 2.2 or later is required.
-
-#### clean-modular-springboot-webapp
-
-Generates a clean Spring Boot multi Maven module project without any example code. If you need a clean approach, this is
-the best way to start.
-
-The generated project will use the following version:
+The generated project will use the following versions:
 
 * Java 17
 * GWT 2.12.2
 * Spring Boot 3.4.4
 
-#### modular-springboot-webapp
-
-Generates a Spring Boot multi Maven module project with any example code. The example is similar to the one from the GWT
-project.
-
-The generated project will use the following version:
-
-* Java 17
-* GWT 2.11.0
-* Spring Boot 3.2.5
+> 📝 Maven 2.2 or later is required.
 
 ### Start the development mode
 

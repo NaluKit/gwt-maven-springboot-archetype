@@ -25,7 +25,7 @@ where the available `<artifactId>` is:
 
     * Generates a Spring Boot multi Maven module project with example code.
     * The example is similar to the one from the GWT project.
-    * This is the best way to start if you want to see how things work.
+    * This is the best way to start if you want to see how things are working.
 
 The generated project will use the following versions:
 

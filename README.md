@@ -52,7 +52,7 @@ and the Spring Boot server outputs `Started Application in xxx seconds`.
 
 ## Build a release
 
-After you have generated your project from the above steps, you can create a release build and test it works.
+After you have generated your project from the above steps, you can create a release build and check if it works.
 
 Change directory to your generated project and issue the following commands:
 

@@ -8,9 +8,9 @@
   <packaging>pom</packaging>
 
   <properties>
-    <gwt.version>2.12.2</gwt.version>
+    <gwt.version>2.13.0</gwt.version>
     <snakeyaml.version>2.0</snakeyaml.version>
-    <spring-boot.version>3.4.4</spring-boot.version>
+    <spring-boot.version>4.0.2</spring-boot.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -63,7 +63,7 @@
         <plugin>
           <groupId>net.ltgt.gwt.maven</groupId>
           <artifactId>gwt-maven-plugin</artifactId>
-          <version>1.1.0</version>
+          <version>1.2.0</version>
           <extensions>true</extensions>
           <configuration>
             <sourceLevel>17</sourceLevel>

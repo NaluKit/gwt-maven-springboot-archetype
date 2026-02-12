@@ -30,8 +30,8 @@ where the available `<artifactId>` is:
 The generated project will use the following versions:
 
 * Java 17
-* GWT 2.12.2
-* Spring Boot 3.4.4
+* GWT 2.13.0
+* Spring Boot 4.0.2
 
 > 📝 Maven 2.2 or later is required.
 

@@ -100,7 +100,7 @@
           <publishingServerId>central</publishingServerId>
           <centralBaseUrl>https://central.sonatype.com</centralBaseUrl>
           <autoPublish>true</autoPublish>
-          <deploymentName>gwt-maven-archetypes ${project.version}</deploymentName>
+          <deploymentName>gwt-maven-springboot-archetypes ${project.version}</deploymentName>
         </configuration>
         <!-- Note: "manual" configuration (no "extensions=true") to prevent
        flatten-m-p from including the plugin in deployment POMs -->

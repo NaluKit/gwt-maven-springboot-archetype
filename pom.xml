@@ -98,7 +98,6 @@
         <extensions>true</extensions>
         <configuration>
           <publishingServerId>central</publishingServerId>
-          <centralBaseUrl>https://central.sonatype.com</centralBaseUrl>
           <autoPublish>true</autoPublish>
           <deploymentName>gwt-maven-springboot-archetypes ${project.version}</deploymentName>
         </configuration>

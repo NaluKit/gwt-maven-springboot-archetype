@@ -68,7 +68,7 @@
   </issueManagement>
 
   <properties>
-    <plugin.version.central>0.7.0</plugin.version.central>
+    <plugin.version.central>0.9.0</plugin.version.central>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -98,14 +98,23 @@
         <extensions>true</extensions>
         <configuration>
           <publishingServerId>central</publishingServerId>
-          <centralBaseUrl>https://central.sonatype.com</centralBaseUrl>
-          <centralSnapshotsUrl>https://central.sonatype.com/repository/maven-snapshots/</centralSnapshotsUrl>
+          <autoPublish>true</autoPublish>
+          <deploymentName>gwt-maven-archetypes ${project.version}</deploymentName>
         </configuration>
+        <!-- Note: "manual" configuration (no "extensions=true") to prevent
+       flatten-m-p from including the plugin in deployment POMs -->
+        <executions>
+          <execution>
+            <goals>
+              <goal>publish</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>flatten-maven-plugin</artifactId>
-        <version>1.6.0</version>
+        <version>1.7.3</version>
         <configuration>
           <flattenMode>oss</flattenMode>
         </configuration>
@@ -157,7 +166,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-source-plugin</artifactId>
-            <version>3.3.0</version>
+            <version>3.4.0</version>
             <executions>
               <execution>
                 <id>attach-sources</id>

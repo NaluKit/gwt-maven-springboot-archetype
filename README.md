@@ -11,7 +11,7 @@ If you are looking for the original archetype creator or would prefer another ba
 ### Generate a project
 
 ```shell
-mvn archetype:generate -DarchetypeGroupId=com.github.nalukit.archetype -DarchetypeVersion=LATEST -DarchetypeArtifactId=<artifactId>
+mvn archetype:generate -DarchetypeGroupId=io.github.nalukit.archetype -DarchetypeVersion=LATEST -DarchetypeArtifactId=<artifactId>
 ```
 
 where the available `<artifactId>` is:
@@ -30,8 +30,8 @@ where the available `<artifactId>` is:
 The generated project will use the following versions:
 
 * Java 17
-* GWT 2.13.0
-* Spring Boot 4.0.2
+* GWT 2.13.1
+* Spring Boot 4.1.0
 
 > 📝 Maven 2.2 or later is required.
 

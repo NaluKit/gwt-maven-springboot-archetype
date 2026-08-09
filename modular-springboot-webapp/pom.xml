@@ -18,7 +18,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>.archetype</groupId>
+    <groupId>io.github.nalukit.archetype</groupId>
     <artifactId>gwt-maven-springboot-archetype</artifactId>
     <version>HEAD-SNAPSHOT</version>
   </parent>

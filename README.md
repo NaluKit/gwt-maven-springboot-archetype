@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/branding/gwt-springboot-banner-dark.svg">
+    <img src="docs/branding/gwt-springboot-banner.svg" alt="gwt-maven-springboot-archetype" width="480">
+  </picture>
+</p>
+
 # gwt-maven-springboot-archetype
 
 This project contains a Maven archetype for modular GWT projects using Spring Boot. The repo is based on the
